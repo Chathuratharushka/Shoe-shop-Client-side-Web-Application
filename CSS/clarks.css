@@ -1,0 +1,700 @@
+body{
+    margin: 0%;
+}
+#logoImage{
+    height: 83px; 
+    width: 100%;
+    float: left ;
+}
+#title{
+    display: none;
+    font-size: 25px;
+    color: #242424;
+    font-weight: bold;
+}
+#heading{
+    width: 300px;    
+}
+#navgigation{
+    list-style-type: none;
+    margin-left:0;
+    padding:0;
+    overflow: hidden;
+    background-color: rgb(223, 223, 223);
+} 
+.navElements {
+    float: left;
+    border-right:1px solid #bbb;
+}
+.navElements a {
+    display: block;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    font-size: 20px;
+    padding: 30px 40px ;
+    text-decoration: none;
+    font-weight: bold;
+}
+.navElements a:hover {
+    background-color: rgb(8, 8, 8);
+    font-weight: bold;
+    color: white;
+}
+.formInputDescrip{
+    font-size: 24px;    
+}
+#searchForm{
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1%;
+    width: 900px;
+    border: solid 1px black;
+}
+#gender{
+    width: 410px;
+    float: left;
+}
+#size{
+    float: right;
+}
+#firstBlock{
+    width: 705px;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#colour{
+    width: 340px;
+    float: left;   
+}
+#style{
+    width: 320px;
+    float: left;
+    margin-left: 20px;   
+}
+
+#secondBlock{
+    width: 680px;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#priceSlider{
+    margin-top: 2%;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#fouthBlock{
+    width: 680px;
+    height: 50px;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto;
+}
+#minPrice{ 
+    width: 340px;
+    float: left; 
+}
+#maxPrice{
+    width: 340px;
+    float: left;  
+} 
+#searchButton{
+    margin-left: 45%;   
+}
+#results{
+  width: 69.5%;
+  float: left;
+  margin-top: 5px;
+  margin-left: 0.5%;
+}
+.resultContainer{
+    width: 100%;   
+    margin-bottom: 5px;
+    display: inline-flex;
+    border: solid 1px grey;
+}
+.resultImages{
+    height: 33%;
+    width:33%;
+}
+.resultDetails{
+   width: 66%;
+   margin-left: 1%;
+   background-color: rgb(223, 223, 223);
+   padding-bottom: 10px;
+   
+}
+.pricesOfResults{
+    font-size: 25px;
+    margin-left: 5%;
+    font-weight: bold;
+}
+.namesOfResults{
+    font-size: 20px;
+    font-weight: bold;
+}
+.moreDetailsButton{
+    width: 100px;
+    height: 25px;
+    margin-left: 70%;
+    margin-right: 5%;
+    border-radius: 8px;   
+}
+.singleShoeContainer{
+    border: solid 1px rgb(190, 190, 190);
+    width: 70%;
+    margin-left: 0.5%;
+    float: left;
+    margin-top: 0.5%;
+}
+#mainContainer{
+    background-color: rgb(252, 252, 249);
+    width: 100%;
+    display: inline-flex;
+    height: 570px;    
+}
+#imageContainer{
+    width: 45%;
+    margin: 1%;
+    padding: 0%;
+}
+#thumbnailContainer{
+    width: 100%;
+    margin-top: 0.5%;
+    display: inline-flex;
+}
+#largeImageContainer{
+    width: 99.5%; 
+    border: solid 1px rgb(182, 181, 181);
+}
+#largeImage{
+    width: 100%;
+    height: 80%;
+    padding-right: 1%;
+    margin-top: 0%;
+}
+.thumbnailImages{
+    height: 20.7%;
+    width: 19.52%;
+    margin-right: 0%;
+    border: solid 1px rgb(182, 181, 181);
+}
+#shoeDetails{
+    margin: 0%;
+    width: 55%;
+    background-color: white; 
+}
+#shoePrice{
+    padding: 0%;
+    margin-top: 12%;
+    margin-left: 10%;
+    font-size: 28px;
+    margin-bottom: 0;
+    font-weight: 600;
+}
+#shoeName{
+    font-size: 35px;
+    margin: 0%;
+    margin-top: 1%;
+}
+#shoeStyle{
+    margin-top: 0%;
+}
+#shoeColoursContainer{
+    display: inline-flex;
+}
+#shoeColours{
+    font-weight: 600;
+    margin-bottom: 0%;
+    margin-top: 17%;
+}
+.colourBoxes{
+    width: 60px;
+    height: 40px;
+    margin-left: 10px;
+    border: solid 1px rgb(182, 181, 181);
+    margin-bottom: 0%;
+}
+.shoeSizesContainer{
+    display: inline-flex;
+    margin-bottom: 0%;
+    width: 100%;
+}
+.sizeBoxes{
+    border: solid 1px rgb(182, 181, 181);
+    width: 50px;
+    height: 40px;
+    text-align: center;
+    font-size: 35px;
+    margin-left: 10px;
+}
+#shoeSizes{
+    font-weight: 600;
+    margin-bottom: 0%;
+    margin-top: 10%;
+}
+#addToFavButton{
+    margin-left: 75%;
+    width: 120px;
+    height: 40px;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;  
+}
+#imageViewer {
+    display: none;
+    position: fixed;
+    padding-top: 0%;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.9);
+}
+
+.modalContent {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width:800px;   
+}
+
+#closeIcon {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+}
+#closeIcon:hover,
+#closeIcon:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+.tabsHeadings{
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+.sizeGuideTableData{
+    border: solid 1px;
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    text-align: center;
+}
+#sizeGuideTable{
+    margin: auto;
+}
+#productDesc{
+    border: solid 1px;
+    width: 30%;
+    margin: auto;
+    padding: 2%;
+    border-radius: 18px;
+}
+.deliverPriceData{
+    width: 15%;
+    font-weight: bold;  
+}
+.deliveryDescriptionData{
+    width: 60%;
+}
+#deliveryTable{
+    margin: auto;
+    font-size: 20px;
+}
+#FavouritesShoes{
+    margin-top: 0.5%;
+    width: 28.5%;
+      /*testing */
+    float: right;
+    margin-right: 0.5%;
+    border: solid 1px;
+    border-radius: 10px;
+}
+#favHeading{
+    background-color: rgb(102, 102, 102);
+    color: white;
+    text-align: center;
+    width: 200px;
+    margin: auto;
+    
+}
+#allFavShoesResults{
+    width: 100%;
+}
+.favouriteResult{
+    width: 98%;
+    border: solid 1px;
+    
+    display: inline-flex;
+    margin-top: 1%;
+    margin-left: 1%;
+    
+}
+.favouriteImgContainer{
+    height: 130px;
+    width: 35%;
+    background-color: #bbb;
+    border: solid 1px;
+}
+.favouriteImages{
+    width: 100%;
+    height: 100%;
+
+}
+.active{
+    height: 50px;
+    width: 60px;
+    margin-left: 60%;
+}
+.favShoeDetailsContainer{
+    width: 65%;
+    background-color: rgb(204, 204, 204);
+    
+    
+}
+.favShoePrice{
+    font-weight: bold;
+    margin-left: 5%;
+    color: black;
+}
+.favDeleteButton{
+    border: solid 1px;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 70%;
+    border-radius: 5px;
+}
+.favDeleteButton:hover{
+    background-color: black;
+    color: white;
+    font-weight: bold;  
+}
+.noElementsFavouriteResult{
+    width: 100%;
+    text-align: center;
+    font-size: 20px;
+}
+#clearButton{
+    margin-left: 45%;
+    margin-top: 0.5%;
+}
+
+.slidingFrame{
+    overflow: hidden;
+    height: 400px;
+    width:800px;
+    margin:auto;
+}
+
+.slidingImages{
+    width: 4000px;
+    height: 400px;
+    margin: 0 0 0 -3200px;
+    position: relative;
+    -webkit-animation-name: slide_animation;
+    -webkit-animation-duration: 20s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-play-state: running;
+    
+}
+
+@-webkit-keyframes slide_animation{
+    0% {left:0px;}
+    11% {left: 0px;}
+    22% {left: 800px;}
+    33% {left: 800px;}
+    44% {left: 1600px;}
+    55% {left: 1600px;}
+    66% {left: 2400px;}
+    77% {left: 2400px;}
+    88% {left: 3200px;}
+    100% {left:3200px;}
+}
+
+.image-container{
+    height: 400px;
+    width: 800px;
+    position: relative;
+    float: left;
+}
+
+#welcomeTag{
+    text-align: center;
+    font-size: 60px;
+}
+
+
+@media screen and (max-width: 909px){
+    
+    .navElements{
+        float: none;  
+    }
+    .navElements a{
+        padding-top: 3px;
+        padding-bottom: 3px;
+    }
+    #heading{
+       margin: auto;
+       border: none;
+    }
+    #title{
+        display:contents;
+    }
+    #logoImage{
+        height: 30px;
+        width: 30%;
+        float: left ;
+    }
+
+    /* search form */
+    #searchForm{
+        padding: 0%;
+        width: 99%;
+    }
+    #gender{
+        float:none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #size{
+        margin-left: 30%;
+        float: none;
+        margin-top: 2.5%;  
+    }
+    #firstBlock{
+        width: 100%;
+        height: 100px;  
+    }
+    #colour{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;    
+    }
+    #style{
+        margin-top: 2.5% ;
+        margin-left: auto;
+        margin-right: auto; 
+        float: none;   
+    }
+    #secondBlock{
+        width: 100%;
+        height: 100px;
+        margin-top: 1%;   
+    }
+    #priceSlider{
+        margin-top: 2%;
+        width: 60%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    #fouthBlock{
+        width: 100%;
+        height: 100px;  
+    }
+    #minPrice{
+        margin-left: auto;
+        margin-right: auto;
+        float: none;   
+    }
+    #maxPrice{
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2%;
+        float: none;   
+    } 
+
+    /* Search Results */
+    .resultContainer{
+        width: 100%;   
+         background-color: rgb(223, 223, 223);
+        margin-bottom: 8px;
+        display: block;
+        border: solid 1px grey;
+    }
+    .resultImages{
+        height: 50%;
+        width:50%;
+        margin-left: 25%;
+        margin-right: 25%;
+    }
+    .resultDetails{
+        margin-top: 0%;
+        width: 99.9%;
+        margin-left: 0%;
+        background-color: rgb(223, 223, 223);
+        padding-bottom: 10px;
+        margin-bottom: 0%;
+    }
+    .pricesOfResults{
+        font-size: 25px;
+        margin-left: 0%;
+        font-weight: bold;
+        text-align: center;
+    }
+    .namesOfResults{
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .moreDetailsButton{
+        width: 100px;
+        height: 25px;
+        margin-left: 40%;
+        border-radius: 8px;  
+    }
+
+    /* Favourite Results */
+    .favouriteResult{
+        width: 98%;
+        border: solid 1px;
+        display: block;
+        margin-top: 1%;
+        margin-left: 1%;
+    }
+    .favouriteImgContainer{
+        height: 150px;
+        width: 99%;
+        background-color: #bbb;
+        border: none;
+        padding-bottom: 0%;
+        margin-bottom: 0%;
+    }
+    .favouriteImages{
+        width: 100%;
+        height: 100%;
+    }
+    .favShoeDetailsContainer{
+        width: 100%;
+        background-color: rgb(204, 204, 204);
+        margin-top: 0%;
+    }
+    .favShoePrice{
+        font-weight: bold;
+        text-align: center;
+        color: black;
+    }
+    .favDeleteButton{
+        border: solid 1px;
+        padding-left: 1%;
+        padding-right: 1%;
+        margin-left: 43%;
+        border-radius: 5px;
+    }
+    .favDeleteButton:hover{
+        background-color: black;
+        color: white;
+        font-weight: bold;
+    }
+    #clearButton{
+        margin-left: 40%;
+        margin-top: 0.5%;
+    }
+
+    /* Shoe Page */
+    .singleShoeContainer{
+        border: solid 1px rgb(190, 190, 190);
+        width: 69.5%;
+        margin-left: 0.5%;
+        float: left;
+        margin-top: 0.5%;
+    }
+    #mainContainer{
+        width: 100%;
+        display: block;
+        height: 1200px;   
+    }
+    #imageContainer{
+        width: 100%;
+        margin: 0%;
+        padding: 0%;
+    }
+    #thumbnailContainer{
+        width: 100%;
+        margin-top: 0.5%;
+        display: inline-flex;
+    }
+    #largeImageContainer{
+        width: 99.5%; 
+        border: solid 1px rgb(182, 181, 181);
+    }
+    .thumbnailImages{
+        height: 20.7%;
+        width: 19.52%;
+        margin-right: 0%;
+        border: solid 1px rgb(182, 181, 181);
+    }
+    #shoeDetails{ 
+        margin: 0%;
+        width: 99.8%;
+        background-color: white; 
+    }
+    #shoePrice{   
+        margin-top: 12%;
+        margin-left: 0%;
+        text-align: center;
+        font-weight: 600;
+    }
+    #shoeName{
+        font-size: 40px;
+        text-align: center;
+        margin-top: 1.5%;
+    }
+    #shoeStyle{
+        margin-top: 0%;
+        text-align: center;
+    }
+    #shoeColoursContainer{
+        margin-left: auto;
+        margin-right: auto;
+        display: inline-flex;
+    }
+    #shoeColours{
+        font-weight: 600;
+        margin-bottom: 0%;
+        margin-top: 0%;
+    }
+    .colourBoxes{
+        width: 60px;
+        height: 40px;
+        margin-left: 10px;
+        border: solid 1px rgb(182, 181, 181);
+        margin-bottom: 0%;
+    }
+    .shoeSizesContainer{
+        display: inline-flex;
+        margin-bottom: 0%;
+        width: 100%;
+    }
+    .sizeBoxes{
+        border: solid 1px rgb(182, 181, 181);
+        width: 50px;
+        height: 40px;
+        text-align: center;
+        font-size: 35px;
+        margin-left: 10px;
+    }
+    #shoeSizes{
+        font-weight: 600;
+        margin-bottom: 0%;
+        margin-top: 10%;
+    }
+    #addToFavButton{
+        margin-left: 40%;
+        width: 120px;
+        height: 40px;
+        margin-top: 2.5%;
+        margin-bottom: 2.5%;
+    }
+}

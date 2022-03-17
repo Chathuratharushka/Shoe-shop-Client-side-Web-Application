@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../Images/Logo.png"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarks Shoes</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    <link rel="stylesheet" href="../CSS/clarks.css">
+    <script src="../JS/main.js"></script>
+    
+</head>
+<body >
+    <Header >
+        <nav >  <!--navigation bar-->
+            <ul id="navgigation">
+              
+              <li class="navElements" id="heading"><div >
+                <img id="logoImage" src="../Images/Logo.png" alt="logo">
+                <h1 id="title">Clarks Shoes</h1>
+              </div></li>
+              <li class="navElements"><a href="../home.html">Home</a></li>
+              <li class="navElements"><a href="search.html">Search</a></li>
+            </ul>
+          </nav>
+    </Header>
+    <div id="shoe4" class="singleShoeContainer">
+        <div id="mainContainer">
+            <div id="imageContainer">
+                <div id="largeImageContainer">
+                    <img id="largeImage" src="../Images/shoe4/image1.jpg" alt="">
+                </div>
+                <div id="thumbnailContainer">
+                    <img class="thumbnailImages" src="../Images/shoe4/image1.jpg" onclick="thumbnailFunction(this);" >
+                    <img class="thumbnailImages" src="../Images/shoe4/image2.jpg" onclick="thumbnailFunction(this);">
+                    <img class="thumbnailImages" src="../Images/shoe4/image3.jpg" onclick="thumbnailFunction(this);">
+                    <img class="thumbnailImages" src="../Images/shoe4/image4.jpg" onclick="thumbnailFunction(this);">
+                    <img class="thumbnailImages" src="../Images/shoe4/image5.jpg" onclick="thumbnailFunction(this);">
+                </div>
+            </div>
+            
+            <div id="shoeDetails">
+                <h1 id="shoeName">Ferius Creek Dark Blue Combi</h1>
+                <p id="shoeStyle">Loafer Type Shoe - Men</p>
+                <p id="shoePrice">$ 60.00</p>
+                <hr>
+                <p id="shoeColours">Available Colours</p>
+                <div id=shoeColoursContainer>
+                    <div class="colourBoxes" style="background-color: rgb(20, 3, 250);"></div>
+                    <div class="colourBoxes" style="background-color: rgb(3, 3, 3);"></div>
+                    <div class="colourBoxes" style="background-color: rgb(255, 255, 255);"></div>
+                    
+                </div>
+                <p id="shoeSizes">Available Sizes</p>
+                <div class="shoeSizesContainer">
+                    <div class="sizeBoxes">7.5</div>
+                    <div class="sizeBoxes">8</div>
+                    <div class="sizeBoxes">8.5</div>
+                    <div class="sizeBoxes">9</div>
+                    
+                </div>
+                <div class="shoeSizesContainer">
+                    <div class="sizeBoxes">9.5</div>
+                    <div class="sizeBoxes">10</div>
+                    
+                </div>
+                
+            </div> 
+        </div>
+        
+        <input type="button" id="addToFavButton" value="Add To Favourite">
+           
+        <div id="imageViewer">
+            <span id="closeIcon">&times;</span>
+            <img class="modalContent" id="fullImage">
+        </div> 
+        <div id="tabs">
+            <ul>
+              <li><a href="#tabs-1">Description</a></li>
+              <li><a href="#tabs-2">Size Guide</a></li>
+              <li><a href="#tabs-3">Delivery And Return Details</a></li>
+            </ul>
+            <div id="tabs-1">
+                <h1 class="tabsHeadings">Product Description</h1>
+                <p id="productDesc">Finished with classic Clarks craftsmanship, Ferius Creek is an uncluttered moccasin in combination dark blue leathers from our Unstructured® range. Premium and timeless with a subtle square toe, the look takes you from casual to smart with ease. Leather linings feel great for barefoot wear, while an OrthoLite® Contoured Comfort footbed and grippy rubber outsole give unrivalled comfort.</p>
+            </div>
+            <div id="tabs-2">
+                <div id="sizeGuideContent">
+                    
+                </div>
+                <h1 class="tabsHeadings">Clarks Shoe Sizes Guide</h1>
+                    <table id="sizeGuideTable">
+                        <tr>
+                            <th class="sizeGuideTableData">Clarks UK Size</th>
+                            <th class="sizeGuideTableData">Clarks EU Size</th>
+                            <th class="sizeGuideTableData">Standard EU Size</th>
+                            <th class="sizeGuideTableData">Foot length (Millimetres)</th>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">5</td>
+                            <td class="sizeGuideTableData">38</td>
+                            <td class="sizeGuideTableData">38</td>
+                            <td class="sizeGuideTableData">237</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">5.5</td>
+                            <td class="sizeGuideTableData">39</td>
+                            <td class="sizeGuideTableData">38.5</td>
+                            <td class="sizeGuideTableData">241</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">6</td>
+                            <td class="sizeGuideTableData">39.5</td>
+                            <td class="sizeGuideTableData">39</td>
+                            <td class="sizeGuideTableData">246</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">6.5</td>
+                            <td class="sizeGuideTableData">40</td>
+                            <td class="sizeGuideTableData">40</td>
+                            <td class="sizeGuideTableData">250</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">7</td>
+                            <td class="sizeGuideTableData">41</td>
+                            <td class="sizeGuideTableData">41</td>
+                            <td class="sizeGuideTableData">258</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">7.5</td>
+                            <td class="sizeGuideTableData">41.5</td>
+                            <td class="sizeGuideTableData">41.5</td>
+                            <td class="sizeGuideTableData">258</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">8</td>
+                            <td class="sizeGuideTableData">42</td>
+                            <td class="sizeGuideTableData">42</td>
+                            <td class="sizeGuideTableData">263</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">8.5</td>
+                            <td class="sizeGuideTableData">42.5</td>
+                            <td class="sizeGuideTableData">42.5</td>
+                            <td class="sizeGuideTableData">267</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">9</td>
+                            <td class="sizeGuideTableData">43</td>
+                            <td class="sizeGuideTableData">43</td>
+                            <td class="sizeGuideTableData">272</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">9.5</td>
+                            <td class="sizeGuideTableData">44</td>
+                            <td class="sizeGuideTableData">44</td>
+                            <td class="sizeGuideTableData">276</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">10</td>
+                            <td class="sizeGuideTableData">44.5</td>
+                            <td class="sizeGuideTableData">45</td>
+                            <td class="sizeGuideTableData">280</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">10.5</td>
+                            <td class="sizeGuideTableData">45</td>
+                            <td class="sizeGuideTableData">45.5</td>
+                            <td class="sizeGuideTableData">285</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">11</td>
+                            <td class="sizeGuideTableData">46</td>
+                            <td class="sizeGuideTableData">46</td>
+                            <td class="sizeGuideTableData">289</td>
+                        </tr>
+                        <tr>
+                            <td class="sizeGuideTableData">11.5</td>
+                            <td class="sizeGuideTableData">46.5</td>
+                            <td class="sizeGuideTableData">46.5</td>
+                            <td class="sizeGuideTableData">293</td>
+                        </tr>  
+                        <tr>
+                            <td class="sizeGuideTableData">12</td>
+                            <td class="sizeGuideTableData">47</td>
+                            <td class="sizeGuideTableData">47</td>
+                            <td class="sizeGuideTableData">298</td>
+                        </tr>              
+                    </table>
+            </div>
+            <div id="tabs-3">
+                <h1 class="tabsHeadings">Delivery and Returns Details</h1>
+                <table id="deliveryTable">
+                    <tr>
+                        <td class="deliverPriceData">$6.95</td>
+                        <td class="deliveryDescriptionData">DPD Next Day Delivery (Order before 7pm)</td>
+                    </tr>
+                    <tr>
+                        <td class="deliverPriceData">FREE</td>
+                        <td class="deliveryDescriptionData">Collect from store (Within 4 working days</td>
+                    </tr>
+                    <tr>
+                        <td class="deliverPriceData">$3.95</td>
+                        <td class="deliveryDescriptionData">Standard Delivery (Within 4 working days)</td>
+                    </tr>
+                    <tr>
+                        <td class="deliverPriceData">$3.95</td>
+                        <td class="deliveryDescriptionData">Collect Plus (Within 5 working days)</td>
+                    </tr>
+                    <tr>
+                        <td class="deliverPriceData">$5.95</td>
+                        <td class="deliveryDescriptionData">Hermes Express Delivery (Within 2 working days)</td>
+                    </tr>
+                    <tr>
+                        <td class="deliverPriceData">FREE</td>
+                        <td class="deliveryDescriptionData">Returns & Exchanges on all Items</td>
+                    </tr>
+                </table>
+            </div>
+          </div>
+    </div>
+    <div id="FavouritesShoes">
+        <h2 id="favHeading">Favourite Shoes</h2>
+        <input type="button" id="clearButton" value="Clear">
+        <div id="allFavShoesResults">
+            
+        </div>
+    </div>
+    
+    <script>
+        //function to change large image according to thumbnail clicks
+       function thumbnailFunction(images) {
+           var largeImg = document.getElementById("largeImage");
+           largeImg.src = images.src;
+       }
+   
+       // full screen image viewer
+       $("#largeImage").click(function(){
+           $("#fullImage").attr("src", $(this).attr("src"));
+           $('#imageViewer').show();
+       });
+       //full screen image viewer close buttton
+       $("#closeIcon").click(function(){
+           $('#imageViewer').hide();
+       });
+       $( "#tabs" ).tabs();
+      
+    </script>  
+ 
+</body>
+</html>

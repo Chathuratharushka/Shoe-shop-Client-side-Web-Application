@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="../Images/Logo.png"> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clarks Shoes</title>
+    <link rel="stylesheet" href="http://code.jquery.com/ui/1.13.0/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="http://resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="https://code.jquery.com/ui/1.13.0/jquery-ui.js"></script>
+    
+ 
+    <link rel="stylesheet" href="../CSS/clarks.css">
+    <script src="../JS/main.js"></script>
+  </head>
+<body>
+    <Header >
+        <nav >  <!--navigation bar-->
+            <ul id="navgigation">
+              
+              <li class="navElements" id="heading"><div >
+                <img id="logoImage" src="../Images/Logo.png" alt="logo">
+                <h1 id="title">Clarks Shoes</h1>
+              </div></li>
+              <li class="navElements"><a href="../home.html">Home</a></li>
+              <li class="navElements"><a href="search.html">Search</a></li>
+            </ul>
+          </nav>
+    </Header>
+
+<body>
+  <div id="searchForm">
+    <form action="">
+      <div id="firstBlock">
+        <div id="gender">
+          <label class="formInputDescrip">Gender </label>
+          <label for="radio-1">Male</label>
+          <input class="radioButtons" type="radio" name="gender" id="radio-1" value="Men" >
+          <label for="radio-2">Female</label>
+          <input class="radioButtons" type="radio" name="gender" id="radio-2" value="Women">
+          <label for="radio-3">Universal</label>
+          <input class="radioButtons" type="radio" name="gender" id="radio-3" value="Universal">
+        </div>
+        <div id="size">
+          <label class="formInputDescrip" for="sizeSpinner">Size </label>
+          <input id="sizeSpinner" value="" min=4 max="12" name="sizeValue">
+        </div>
+      </div>
+      
+      <div id="secondBlock">
+        <div id="colour">
+          <label class="formInputDescrip" for="colour">Colour</label>
+          <select class="selectMenues" name="colour" id="colourSelection">
+            <option selected="selected" value="any">Any</option>
+            <option value="Grey">Grey</option>
+            <option value="White">White</option>
+            <option value="Dark Blue">Dark Blue</option>
+            <option value="Black">Black</option>
+            <option value="Brown">Brown</option>
+          </select>
+        </div>
+        <div id="style">
+          <label class="formInputDescrip" for="style">Style </label>
+          <select class="selectMenues" name="style" id="styleSelection">
+            <option selected="selected" value="any">Any</option>
+            <option value="Flat">Flat</option>
+            <option value="Boot">Boot</option>
+            <option value="Loafer">Loafer</option>
+            <option value="Trainer">Trainer</option>
+            <option value="Slipper">Slipper</option>
+          </select>
+        </div>
+      </div>
+      <!-- <div id="thirdBlock">
+        <div id="minSize">
+          <label class="formInputDescrip" for="minSizeSpinner">Min Size</label>
+          <input id="minSizeSpinner" value="4" min=4 max="12" name="minSizeValue"> 
+        </div>
+        <div id="maxSize">
+          <label class="formInputDescrip" for="maxSizeSpinner">Max Size </label>
+          <input id="maxSizeSpinner" value="12" min=4 max="12" name="maxSizeValue">
+        </div>
+      </div> -->
+      
+      <div id="priceSlider"></div>
+      
+      
+      <div id=fouthBlock>
+          <div id="minPrice">
+            <label class="formInputDescrip" for="minPiceSpinner">Min Price </label>
+            <input id="minPriceSpinner" value="0" min=0 max="499" name="minPriceValue"> 
+          </div>
+          <div id="maxPrice">
+              <label class="formInputDescrip" for="maxPiceSpinner">Max Price</label>
+              <input id="maxPriceSpinner" value="500" min=1 max="500" name="maxPriceValue" />
+          </div>
+      </div>
+      <input id="searchButton" type="button" value="search" >
+    </form>
+  </div> 
+  <div id="results">
+    
+  </div>   
+  <!-- <div id="favouritesSearch">
+
+  </div> -->
+  <div id="FavouritesShoes">
+    <h2 id="favHeading">Favourite Shoes</h2>
+    <input type="button" id="clearButton" value="Clear">
+    <div id="allFavShoesResults">
+        
+    </div>
+  </div>
+ 
+    
+</body>
+</html>
